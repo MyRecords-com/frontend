@@ -4,6 +4,7 @@ import axios from "axios";
 import { Routes, Route, Navigate } from 'react-router-dom'
 import MyRecordsPage from './pages/MyRecordsPage/MyRecordsPage'
 import MyHomePage from './pages/MyHomePage/MyHomePage'
+import MyDashboard from "./pages/MyDashboard/MyDashboard";
 
 export default function App() {
 	return (
@@ -11,6 +12,7 @@ export default function App() {
 			<Routes>
 				<Route path="/myrecords" element={<MyRecordsPage />} />
 				<Route path="" element={<MyHomePage />} />
+				<Route path="/dashboard" element={<MyDashboard />} />
 			</Routes>
 		</main>
 	)

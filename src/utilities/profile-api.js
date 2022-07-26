@@ -1,6 +1,6 @@
 import sendRequest from './send-request'
 
-const BASE_URL = 'localhost:8000/profile'
+const BASE_URL = 'http://127.0.0.1:8000/profile/'
 
 export function getAll() {
     return sendRequest(BASE_URL);
