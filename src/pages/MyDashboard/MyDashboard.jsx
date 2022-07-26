@@ -4,15 +4,18 @@ import * as profileAPI from '../../utilities/profile-api';
 
 export default function MyDashboard() {
 
-const [profile, setProfile] = useState();
+const [profile, setProfile] = useState([]);
 
-    useEffect(function() {
-        // Load the user's cart (the unpaid order for that user)
-        async function getProfile() {
-          const profiles = await profileAPI.getAll();
-          console.log(profiles)
-        setProfile(profiles);
-        }
+// Load the user's cart (the unpaid order for that user)
+
+async function getProfile() {
+    const profiles = await profileAPI.getAll(); 
+    console.log(profiles)
+    setProfile(profiles);
+}
+
+
+    useEffect(() => {
         getProfile();
       }, []);
     
