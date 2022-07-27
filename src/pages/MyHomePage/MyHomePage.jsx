@@ -24,6 +24,9 @@ export default function MyHomePage() {
       <div>
         <h1>NEW RELEASES:</h1>
       </div>
+      { releases.map(rls => {
+      return <MainPageCard key={rls._id} release={rls} />
+    })}
       <MainPageCard />
       </div>
       </div>
