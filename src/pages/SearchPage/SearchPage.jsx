@@ -4,10 +4,12 @@ export default function SearchPage() {
     
     const [queryAppend, setQueryAppend] = useState({})
     const [selectedParam, setSelectedParam] = useState('artist')
-    const [selectedSearch, setSelectedSearch] =useState('')
+    const [selectedSearch, setSelectedSearch] = useState('')
     
-    async function submitQuery(event, selectedParam, selectedSearch) {   
+    async function submitQuery(event) {   
         event.preventDefault();
+        console.log(selectedParam)
+        console.log(selectedSearch)
         let returnedData = await submitAPI.getSearch(selectedParam, selectedSearch)
         console.log(returnedData)
       }
@@ -16,11 +18,13 @@ export default function SearchPage() {
     function handleParamChange(event) {
      const changedParam = event.target.value
      setSelectedParam(changedParam)
-     console.log(selectedParam)
+     //console.log(selectedParam)
+    }
 
+    function handleSearchChange(event) {
      const changedSearch = event.target.value 
      setSelectedSearch(changedSearch)
-     console.log(selectedSearch)
+     // console.log(selectedSearch)
     }
 
     return (
@@ -42,7 +46,7 @@ export default function SearchPage() {
         name="search"
         value={selectedParam.name}
         placeholder="Search"
-        onChange={handleParamChange}
+        onChange={handleSearchChange}
       ></input>
       <button type="submit">Search</button>
         </form>
