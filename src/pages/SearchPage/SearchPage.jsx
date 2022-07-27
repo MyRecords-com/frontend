@@ -3,7 +3,7 @@ import {useEffect, useState, useRef} from 'react'
 export default function SearchPage() {
     
     const [queryAppend, setQueryAppend] = useState({})
-    const [selectedParam, setSelectedParam] = useState({})
+    const [selectedParam, setSelectedParam] = useState([])
     
     function submitQuery(event) {   
         event.preventDefault();   
@@ -14,10 +14,7 @@ export default function SearchPage() {
    
    
     function handleParamChange(event) {
-     const newRequest = {
-       [event.target.name]:
-       (event.target.value)
-     };
+     const newRequest = event.target.value ;
      setSelectedParam(newRequest)
      console.log(newRequest)
      // setPackageAppend({ ...userPackage, persons: event.target.value });
@@ -32,10 +29,10 @@ export default function SearchPage() {
         <form action="">
           <label className='px-2 '>Search By</label>
         <select name="parameter" className='px-8 mr-4 bg-slate-300 ring-1 ring-slate-800' value={selectedParam.param} onChange={handleParamChange}>
-        <option value={1}>Artist</option>
-        <option value={2}>Title</option>
-        <option value={3}>Style</option>
-        <option value={4}>Label</option>
+        <option value='artist'>Artist</option>
+        <option value='title'>Title</option>
+        <option value='style'>Style</option>
+        <option value='label'>Label</option>
       </select>
       <input type="text"></input>
       <button type="submit">Search</button>
