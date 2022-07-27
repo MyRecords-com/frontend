@@ -1,4 +1,4 @@
-import sendRequest from './send-request'
+import sendRequestAPI from './send-request'
 
 const BASE_URL = 'https://api.discogs.com'
 
