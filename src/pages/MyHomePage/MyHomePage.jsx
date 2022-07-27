@@ -8,19 +8,19 @@ import Carousel from '../../components/Carousel/Carousel'
 import MainPageCard from "../../components/MainPageCard/MainPageCard";
 export default function MyHomePage() {
   
-//   let [ releases, setReleases ] = useState([])
-//   let number = -1;
+  let [ releases, setReleases ] = useState([])
+  let number = -1;
 
-//   async function getReleases() {
-//     const newReleases = await ajunaAPI.getAjuna(); 
-//     setReleases(newReleases)
-//     console.log(releases)
-// }
+  async function getReleases() {
+    const newReleases = await ajunaAPI.getAjuna(); 
+    setReleases(newReleases)
+    console.log(releases)
+}
 
 
-//     useEffect(() => {
-//         getReleases();
-//       }, []);
+    useEffect(() => {
+        getReleases();
+      }, []);
   
       
 
@@ -38,9 +38,10 @@ export default function MyHomePage() {
         <h1>NEW RELEASES:</h1>
       </div>
       <div>
+        {/* {console.log(releases.releases)} */}
      {/* {  
-     releases.releases.map(rls => {
-       return <MainPageCard key={rls[number+=1]} />
+     releases.releases.map((rls, index) => {
+       return <MainPageCard key={index} />
       })} */}
       </div>
       </div>
