@@ -1,3 +1,5 @@
+import profileimg from '../../img/img_avatar.png'
+import './NavBar.css'
 export default function NavBar() {
     
     return (
@@ -14,11 +16,21 @@ export default function NavBar() {
       </div>
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li className="nav-item">
+            <a className="nav-link" href="#"><img src="" alt="" /></a>
+            </li>
+          <li className="nav-item text-center">
+            <a className="nav-link" href="#"><img src={profileimg} class="avatar"></img></a><br></br>
+            Welcome Back Miles !
+          </li>
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Link</a>
+            <a className="nav-link active" aria-current="page" href="#">My Dashboard</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="#">Search Records</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
