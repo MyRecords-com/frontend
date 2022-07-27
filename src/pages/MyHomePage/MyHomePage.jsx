@@ -13,9 +13,7 @@ export default function MyHomePage() {
 
   async function getReleases() {
     const newReleases = await ajunaAPI.getAjuna(); 
-    setReleases([
-      ...releases,
-      newReleases.releases ])
+    setReleases(newReleases.releases)
 }
 
 
@@ -39,10 +37,10 @@ console.log(releases)
         <h1>NEW RELEASES:</h1>
       </div>
       <div>
-     {/* {  
-     newReleases.releases.map((rls, index) => {
+     {  
+     releases.map((rls, index) => {
        return <MainPageCard key={index} rls={rls} />
-      })} */}
+      })}
       </div>
       </div>
       </div>
