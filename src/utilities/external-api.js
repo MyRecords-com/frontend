@@ -1,7 +1,7 @@
-// import sendRequest from './send-request'
+import sendRequest from './send-request'
 
-// const BASE_URL = 'https://api.discogs.com/database/'
+const BASE_URL = 'https://api.discogs.com'
 
-// export function getAll() {
-//     return sendRequestAPI(`BASE_URL/labels/{label_id}/releases{?page,per_page}`);
-// }
+export function getAjuna() {
+    return sendRequestAPI(`{BASE_URL}/labels/3870/releases?page=45&key=cdteaeJQmeBXsBWtGZPk&secret=JbIfCZYcvXRgaGdmNGNqChkXmOHJVkrn`);
+}
