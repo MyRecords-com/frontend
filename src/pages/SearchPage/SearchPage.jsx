@@ -1,8 +1,9 @@
 import {useEffect, useState, useRef} from 'react'
 import * as submitAPI from '../../utilities/external-api'
+import RecordCard from '../../components/RecordCard/RecordCard'
 export default function SearchPage() {
     
-    const [queryAppend, setQueryAppend] = useState({})
+    const [queryAppend, setQueryAppend] = useState([])
     const [selectedParam, setSelectedParam] = useState('artist')
     const [selectedSearch, setSelectedSearch] = useState('')
     
@@ -26,7 +27,7 @@ export default function SearchPage() {
      setSelectedSearch(changedSearch)
      // console.log(selectedSearch)
     }
-if (queryAppend === "") {
+if (queryAppend === []) {
     return (
         <>
         <h1>Search Page Here</h1>
@@ -84,9 +85,9 @@ if (queryAppend === "") {
         </div>
         <div className="container">
          {
-            queryAppend.map((rls, index) => {
-              return <RecordCard key={index} rls={rls} />;
-            })};
+            queryAppend.map((rec, index) => {
+              return <RecordCard key={index} rec={rec} />
+            })}
         </div>
       </>
     );
