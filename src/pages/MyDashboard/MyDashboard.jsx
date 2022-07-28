@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import Profile from '../../components/Profile/Profile'
-import NavBar from '../../components/NavBar/NavBar';
 import * as profileAPI from '../../utilities/profile-api';
 
 export default function MyDashboard() {
@@ -22,7 +21,6 @@ async function getProfile() {
     
     return (
         <>
-        <NavBar />
         <Profile profile={profile} />
         </>
     )

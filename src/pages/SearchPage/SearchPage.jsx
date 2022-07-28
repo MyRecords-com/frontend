@@ -8,10 +8,10 @@ export default function SearchPage() {
     
     async function submitQuery(event) {   
         event.preventDefault();
-        console.log(selectedParam)
-        console.log(selectedSearch)
+
         let returnedData = await submitAPI.getSearch(selectedParam, selectedSearch)
-        console.log(returnedData)
+        setQueryAppend(returnedData.results)
+        console.log(queryAppend)
       }
    
    
@@ -26,7 +26,7 @@ export default function SearchPage() {
      setSelectedSearch(changedSearch)
      // console.log(selectedSearch)
     }
-
+if (queryAppend === "") {
     return (
         <>
         <h1>Search Page Here</h1>
@@ -53,4 +53,43 @@ export default function SearchPage() {
         </div>
         </>
         )
+} else {
+    return (
+      <>
+        <h1>Search Page Here</h1>
+
+        <div className="package-add mt-4 text-lg px-2" onSubmit={submitQuery}>
+          <form action="">
+            <label className="px-2 ">Search By</label>
+            <select
+              name="param"
+              className="px-8 mr-4 bg-slate-300 ring-1 ring-slate-800"
+              value={selectedParam.param}
+              onChange={handleParamChange}
+            >
+              <option value="artist">Artist</option>
+              <option value="title">Title</option>
+              <option value="style">Style</option>
+              <option value="label">Label</option>
+            </select>
+            <input
+              type="text"
+              name="search"
+              value={selectedParam.name}
+              placeholder="Search"
+              onChange={handleSearchChange}
+            ></input>
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div className="container">
+         {
+            queryAppend.map((rls, index) => {
+              return <RecordCard key={index} rls={rls} />;
+            })};
+        </div>
+      </>
+    );
+}
+
 }

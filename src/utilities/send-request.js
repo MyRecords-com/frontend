@@ -12,7 +12,7 @@ const options = { method };
 
 // let data;
 const res = await axios(url, options)
-    console.log(res.data)
+    // console.log(res.data)
     return res.data;
 // if (res.ok)
         // throw new Error('Bad Request');
@@ -30,7 +30,7 @@ const options = { method };
 // let data;
 
 const res = await axios(url, options)
-    console.log(res.data)
+    // console.log(res.data)
     return res.data;
 // if (res.ok)
         // throw new Error('Bad Request');

@@ -20,7 +20,7 @@ export default function NavBar() {
             <a className="nav-link" href="#"><img src="" alt="" /></a>
             </li>
           <li className="nav-item text-center">
-            <a className="nav-link" href="#"><img src={profileimg} class="avatar"></img></a><br></br>
+            <a className="nav-link" href="#"><img src={profileimg} className="avatar"></img></a><br></br>
             Welcome Back Miles !
           </li>
           <li className="nav-item">

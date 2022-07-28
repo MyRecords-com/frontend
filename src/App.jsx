@@ -6,10 +6,12 @@ import MyRecordsPage from './pages/MyRecordsPage/MyRecordsPage'
 import MyHomePage from './pages/MyHomePage/MyHomePage'
 import SearchPage from './pages/SearchPage/SearchPage'
 import MyDashboard from "./pages/MyDashboard/MyDashboard";
+import NavBar from './components/NavBar/NavBar'
 
 export default function App() {
 	return (
 		<main className="App">
+			<NavBar />
 			<Routes>
 				<Route path="/myrecords" element={<MyRecordsPage />} />
 				<Route path="/records" element={<SearchPage />} />
