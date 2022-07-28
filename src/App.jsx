@@ -8,17 +8,25 @@ import SearchPage from './pages/SearchPage/SearchPage'
 import MyDashboard from "./pages/MyDashboard/MyDashboard";
 import NavBar from './components/NavBar/NavBar'
 import LoginPage from './components/LoginPage/LoginPage'
+import AuthContext, { AuthProvider } from "./context/AuthContext"
+import ProtectedPage from "./utilities/utils_ProtectedPage";
+import RegisterPage from "./pages/RegisterPage/RegisterPage";
 
 export default function App() {
 	return (
 		<main className="App">
+			<AuthProvider>
 			<NavBar />
 			<Routes>
+				<Route path="/protected" element={<ProtectedPage />} />
 				<Route path="/myrecords" element={<MyRecordsPage />} />
 				<Route path="/records" element={<SearchPage />} />
 				<Route path="" element={<MyHomePage />} />
 				<Route path="/dashboard" element={<MyDashboard />} />
+				<Route path="/register" element={<RegisterPage />} />
+				<Route path="/login" element={<LoginPage/>} />
 			</Routes>
+		</AuthProvider>
 		</main>
 	)
 }
