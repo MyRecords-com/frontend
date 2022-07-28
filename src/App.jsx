@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext, Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
 import { Routes, Route, Navigate } from 'react-router-dom'
@@ -7,6 +7,7 @@ import MyHomePage from './pages/MyHomePage/MyHomePage'
 import SearchPage from './pages/SearchPage/SearchPage'
 import MyDashboard from "./pages/MyDashboard/MyDashboard";
 import NavBar from './components/NavBar/NavBar'
+import LoginPage from './components/LoginPage/LoginPage'
 
 export default function App() {
 	return (
