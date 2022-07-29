@@ -7,6 +7,9 @@ import './NavBar.css'
 export default function NavBar() {
     
   const { user } = useContext(AuthContext);
+  console.log(user)
+  
+  const { logoutUser } = useContext(AuthContext);
 
 
 if (user === null) {
@@ -79,7 +82,7 @@ if (user === null) {
               <li className="nav-item text-center">
                 <a className="nav-link" href="#"><img src={profileimg} className="avatar"></img></a><br></br>
                 Welcome Back <b>{user.username}</b> !<br></br>
-                <button type="button" class="btn btn-primary btn-sm">Logout</button>
+                <button type="button" class="btn btn-primary btn-sm" onClick={logoutUser}>Logout</button>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">Home</a>

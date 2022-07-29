@@ -15,7 +15,7 @@ function LoginPage() {
 
   return (
     <div className="login">
-      <h1 className="text-center">Nova Lyfe</h1>
+      <h1 className="text-center"><u>Login</u></h1>
       <form onSubmit={handleSubmit} className="col-lg-6 offset-lg-3">
         <div class="form-group">
           <div>
@@ -33,7 +33,7 @@ function LoginPage() {
             placeholder="Enter Password" 
           />
         </div>
-        <button type="submit" className="btn btn-secondary">Login</button>
+        <br></br><button type="submit" className="btn btn-secondary">Login</button>
       </form>
     </div>
   );

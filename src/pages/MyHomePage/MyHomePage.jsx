@@ -38,7 +38,6 @@ export default function MyHomePage() {
       <div className="container">
       <div>
         <h1>NEW RELEASES:</h1>
-        <UserInfo user={user} />
       </div>
       <div>
      {  
