@@ -2,7 +2,7 @@ export default function RecordCard({rec}) {
     return (
       <>
         <div class="container">
-          <div class="row">
+          <div class="row justify-content-md-center">
             <div class="col-sm"><img src={rec.thumb}></img></div>
             <div class="col-sm">{rec.title}</div>
             <div class="col-sm">{rec.label}</div>

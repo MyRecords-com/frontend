@@ -26,7 +26,7 @@ export default function MyHomePage() {
       }, []);
   
   
-  const { user } = useContext(AuthContext);
+  let { user } = useContext(AuthContext);
 
 
     return (
@@ -43,7 +43,7 @@ export default function MyHomePage() {
      {  
      releases.map((rls, index) => {
        return <MainPageCard key={index} rls={rls} />
-      })}
+          })}
       </div>
       </div>
       </div>

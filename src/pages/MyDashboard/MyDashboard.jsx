@@ -6,15 +6,16 @@ import AuthContext from '../../context/AuthContext'
 
 export default function MyDashboard() {
     
-const { user } = useContext(AuthContext)
-const { authTokens } = useContext(AuthContext)
+let { user } = useContext(AuthContext)
+let { authTokens } = useContext(AuthContext)
 console.log(authTokens)
-const [profile, setProfile] = useState([]);
+let [profile, setProfile] = useState([]);
+let [collection, setCollection] = useState([])
 
 // Load the user's cart (the unpaid order for that user)
 
 async function getProfile() {
-    const profiles = await profileAPI.getCollection(authTokens); 
+    const profiles = await profileAPI.getProfile(authTokens); 
     console.log(profiles)
     setProfile(profiles);
 }
@@ -25,11 +26,11 @@ async function getProfile() {
       }, []);
     
     return (
-        // <>
-        // <Profile profile={profile} />
-        // <Profile profile={prof} />
-        // </>
+        <>
+        <Profile profile={profile} />
+        {/* <Collection collection={collection}/> */}
         <h1>Here is your profile:</h1>
+        </>
 
     )
 }
