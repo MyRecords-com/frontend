@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useContext } from 'react'
 import Profile from '../../components/Profile/Profile'
 import * as profileAPI from '../../utilities/profile-api';
+
 import AuthContext from '../../context/AuthContext'
 
 
@@ -24,7 +25,17 @@ async function getProfile() {
     useEffect(() => {
         getProfile();
       }, []);
-    
+
+async function getCollection() {
+    const collections = await profileAPI.getCollection(authTokens)
+    setCollection(collections)
+    console.log(collections)
+}
+
+useEffect(() => {
+    getCollection();
+  }, []);
+
     return (
         <>
         <Profile profile={profile} />
