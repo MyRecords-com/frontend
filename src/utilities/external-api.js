@@ -1,4 +1,4 @@
-import sendRequestAPI from './send-request'
+import sendRequestAPI from './external-send'
 
 const BASE_URL = 'https://api.discogs.com'
 
@@ -7,5 +7,5 @@ export function getAjuna() {
 }
 
 export function getSearch(selectedParam, selectedSearch) {
-    return sendRequestAPI(`${BASE_URL}/database/search?${selectedParam}=${selectedSearch}&per_page=50&page=1&key=cdteaeJQmeBXsBWtGZPk&secret=JbIfCZYcvXRgaGdmNGNqChkXmOHJVkrn`)
+    return sendRequestAPI(`${BASE_URL}/database/search?${selectedParam}=${selectedSearch}&per_page=50&page=1&key=cdteaeJQmeBXsBWtGZPk&secret=JbIfCZYcvXRgaGdmNGNqChkXmOHJVkrn`);
 }
