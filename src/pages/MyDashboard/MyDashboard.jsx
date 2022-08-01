@@ -104,7 +104,7 @@ useEffect(() => {
                       <h6 class="mb-0">Email:</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      fip@jukmuh.al
+                      {user.email}
                     </div>
                   </div>
                   <hr/>
@@ -137,18 +137,18 @@ useEffect(() => {
                   <hr/>
                   <div class="row">
                     <div class="col-sm-12">
-                      <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                      <a class="btn btn-info " href="/edit">Edit</a>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div class="row gutters-sm">
-                <div class="col-sm-6 mb-3">
-                  <div class="card h-100">
+                <div class="col-md-12">
+                  <div class="card mb-7">
                     <div class="card-body">
                     {collection.map((col, index) => {
-                    return <div key={index}><h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Collection:  </i>{col.name}</h6>
+                    return <div key={index}><h3 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">Collection:  </i>{col.name}</h3>
                         {col.records.map((rec, index) => {
                             return <div key={index}>
                                 <h6 class="text-muted f-w-400">{rec.name}</h6>
