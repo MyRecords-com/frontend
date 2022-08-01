@@ -33,13 +33,10 @@ if (user === null) {
           <LoginPage />
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Home</a>
+            <a className="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">My Dashboard</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Search Records</a>
+            <a className="nav-link active" aria-current="page" href="/records">Search Records</a>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,13 +81,13 @@ if (user === null) {
                 <button type="button" className="btn btn-primary btn-sm" onClick={logoutUser}>Logout</button>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                <a className="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">My Dashboard</a>
+                <a className="nav-link active" aria-current="page" href="/dashboard">My Dashboard</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Search Records</a>
+                <a className="nav-link active" aria-current="page" href="records">Search Records</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -26,13 +26,14 @@ export default function App() {
 	return (
 		<main className="App">
 			<AuthProvider>
-			{/* <NavBar /> */}
+			<NavBar />
 			<Routes>
 				<Route path="/protected" element={<ProtectedPage />} />
 				<Route path="/myrecords" element={<MyRecordsPage />} />
 				<Route path="/records" element={<SearchPage />} />
 				{/* <Route path="" element={<Landing {...landingData} />} /> */}
 				<Route path="" element={<MyHomePage />} />
+				<Route path="landing/" element={<Landing />} />
 				<Route path="/dashboard" element={<MyDashboard />} />
 				<Route path="/register" element={<RegisterPage />} />
 				<Route path="/login" element={<LoginPage/>} />

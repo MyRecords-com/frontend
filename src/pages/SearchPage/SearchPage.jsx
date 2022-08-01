@@ -57,6 +57,7 @@ if (queryAppend === []) {
 } else {
     return (
       <>
+        <div style={{'padding-bottom': 36}}></div>
         <h1>Search Page Here</h1>
 
         <div className="package-add mt-4 text-lg px-2" onSubmit={submitQuery}>

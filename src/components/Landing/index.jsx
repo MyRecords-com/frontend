@@ -1,686 +1,669 @@
-import React from "react";
-import ButtonsIconFilledActiveOnLight from "../ButtonsIconFilledActiveOnLight";
-import MarketplaceItemV7OnLight from "../MarketplaceItemV7OnLight";
-import MarketplaceItemV7OnLight2 from "../MarketplaceItemV7OnLight2";
-import MarketplaceItemV7OnLight3 from "../MarketplaceItemV7OnLight3";
-import AuthorWebItemV3OnLight from "../AuthorWebItemV3OnLight";
-import ButtonsLabelFilledRestingOnLight from "../ButtonsLabelFilledRestingOnLight";
-import TrendingAlbums from "../TrendingAlbums";
-import ButtonsIconOutlineRestingOnLight from "../ButtonsIconOutlineRestingOnLight";
-import ElementTabsLabelActiveOnLight from "../ElementTabsLabelActiveOnLight";
-import ElementTabsLabelRestingOnLight from "../ElementTabsLabelRestingOnLight";
-import NavigationWebFooterOnLight from "../NavigationWebFooterOnLight";
-import styled from "styled-components";
-import { ButtonLabels16px, Icons28px, TextLabels16pxRegular, HeadingH3 } from "../../styledMixins";
-import "./Landing.css";
+import React from "react"
+import "./styles.css"
 
-class Landing extends React.Component {
-  render() {
-    const {
-      discoverCollectA,
-      ourMarketplaceIs,
-      fieldTitle,
-      selectedNotableDro,
-      navigationWebTopBarWLinksOnlightCop,
-      mostViewedCollections,
-      last7Days,
-      arrow,
-      trendingAlbums,
-      browsePopularAlbums,
-      buttonsIconFilledActiveOnLightProps,
-      marketplaceItemV7OnLightProps,
-      marketplaceItemV7OnLight21Props,
-      marketplaceItemV7OnLight22Props,
-      marketplaceItemV7OnLight3Props,
-      authorWebItemV3OnLight1Props,
-      authorWebItemV3OnLight2Props,
-      authorWebItemV3OnLight3Props,
-      authorWebItemV3OnLight4Props,
-      authorWebItemV3OnLight5Props,
-      authorWebItemV3OnLight6Props,
-      authorWebItemV3OnLight7Props,
-      authorWebItemV3OnLight8Props,
-      authorWebItemV3OnLight9Props,
-      buttonsLabelFilledRestingOnLightPro,
-      trendingAlbums1Props,
-      buttonsIconOutlineRestingOnLight1Pr,
-      buttonsIconOutlineRestingOnLight2Pr,
-      elementTabsLabelActiveOnLightProps,
-      elementTabsLabelRestingOnLight1Prop,
-      elementTabsLabelRestingOnLight2Prop,
-      elementTabsLabelRestingOnLight3Prop,
-      trendingAlbums2Props,
-      buttonsLabelFilledRestingOnLightPro2,
-      navigationWebFooterOnLightProps,
-    } = this.props;
-
-    return (
-      <div className="container-center-horizontal">
-        <div className="landing screen">
-          <OverlapGroup8>
-            <OverlapGroup7>
-              <Bg src="/img/bg@1x.svg" />
-              <Images>
-                <FlexRow>
-                  <Images1 src="/img/images-4@2x.svg" />
-                  <ImagesContainer>
-                    <Images2 src="/img/images@2x.svg" />
-                    <Images3 src="/img/images-2@2x.svg" />
-                  </ImagesContainer>
-                </FlexRow>
-                <FlexCol>
-                  <ImagesContainer1>
-                    <Images4 src="/img/images-3@2x.svg" />
-                    <Images5 src="/img/images-1@2x.svg" />
-                  </ImagesContainer1>
-                  <Images6 src="/img/images-5@2x.svg" />
-                </FlexCol>
-              </Images>
-              <Title>
-                <DiscoverCollectA>{discoverCollectA}</DiscoverCollectA>
-                <OurMarketplaceIs>{ourMarketplaceIs}</OurMarketplaceIs>
-              </Title>
-              <OverlapGroup>
-                <Bg1></Bg1>
-                <FieldTitle>{fieldTitle}</FieldTitle>
-                <ButtonsIconFilledActiveOnLight>
-                  {buttonsIconFilledActiveOnLightProps.children}
-                </ButtonsIconFilledActiveOnLight>
-              </OverlapGroup>
-            </OverlapGroup7>
-            <HighlightAlbums>
-              <SelectedNotableDro>{selectedNotableDro}</SelectedNotableDro>
-              <MarketplaceItemVOnlightContainer>
-                <MarketplaceItemV7OnLight
-                  buttonsIconLabelTransparentRestingO={
-                    marketplaceItemV7OnLightProps.buttonsIconLabelTransparentRestingO
-                  }
-                  buttonsIconLabelTransparentRestingO2={
-                    marketplaceItemV7OnLightProps.buttonsIconLabelTransparentRestingO2
-                  }
+export default function Landing() {
+  return (
+    <div className="landing flex-col-hstart-vstart clip-contents">
+      <div className="flex-col">
+        <div className="most-viewed flex-col-hcenter">
+          <div className="title flex-col-hstart-vstart">
+            <p className="txt-858">last 7 days</p>
+            <p className="txt-1033">Most viewed collections</p>
+          </div>
+          <div className="grid flex-col">
+            <div className="group-2510 flex-row">
+              <div className="collections-list-web-item-v-10 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-911">1</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1140%3B0%3A10525?alt=media&token=1afb742f-128c-4ad2-86c8-983d8011135b"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-624 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 8k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1140%3B0%3A10526?alt=media&token=6d0e68fc-ba1a-4f78-8c33-ed9d44f04add"
+                  alt="Not Found"
+                  className="line"
                 />
-                <MarketplaceItemV7OnLight2
-                  art={marketplaceItemV7OnLight21Props.art}
-                  buttonsIconLabelTransparentRestingO={
-                    marketplaceItemV7OnLight21Props.buttonsIconLabelTransparentRestingO
-                  }
+              </div>
+              <div className="collections-list-web-item-v-101 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-756">4</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1139%3B0%3A10525?alt=media&token=167f2deb-a590-4e0b-baa8-89a3676cc59f"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-624 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 2k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1139%3B0%3A10526?alt=media&token=80a8c1bc-24b2-41e2-882f-b2628c2ba1a2"
+                  alt="Not Found"
+                  className="line"
                 />
-                <MarketplaceItemV7OnLight2
-                  art={marketplaceItemV7OnLight22Props.art}
-                  buttonsIconLabelTransparentRestingO={
-                    marketplaceItemV7OnLight22Props.buttonsIconLabelTransparentRestingO
-                  }
+              </div>
+              <div className="collections-list-web-item-v-10-copy-2 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-753">7</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1138%3B0%3A10525?alt=media&token=cd1645e1-82ee-47f4-95c0-2e13642d5fa1"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-4410 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 1.3k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1138%3B0%3A10526?alt=media&token=c8f64e9a-c54f-46b2-99f4-8318ba0a1731"
+                  alt="Not Found"
+                  className="line"
                 />
-                <MarketplaceItemV7OnLight3
-                  buttonsIconLabelTransparentRestingO={
-                    marketplaceItemV7OnLight3Props.buttonsIconLabelTransparentRestingO
-                  }
+              </div>
+            </div>
+            <div className="group-2510 flex-row">
+              <div className="collections-list-web-item-v-10 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-753">2</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1132%3B0%3A10525?alt=media&token=d559d7a4-1602-4837-a4b0-e51d5449932d"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-321 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 4.3k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1132%3B0%3A10526?alt=media&token=4f28250e-cb7c-4875-a10e-2fda1151a818"
+                  alt="Not Found"
+                  className="line"
                 />
-              </MarketplaceItemVOnlightContainer>
-            </HighlightAlbums>
-            <NavigationWebTopBarWLinksOnLightCop src={navigationWebTopBarWLinksOnlightCop} />
-          </OverlapGroup8>
-          <MostViewed>
-            <Title1>
-              <MostViewedCollections>{mostViewedCollections}</MostViewedCollections>
-              <Last7Days>{last7Days}</Last7Days>
-              <Arrow>{arrow}</Arrow>
-            </Title1>
-            <Grid>
-              <CollectionsListWebItemVContainer>
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight1Props.viewCount}
-                  number={authorWebItemV3OnLight1Props.number}
-                  art={authorWebItemV3OnLight1Props.art}
+              </div>
+              <div className="collections-list-web-item-v-101 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-756">5</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1135%3B0%3A10525?alt=media&token=e4b924c6-a19a-400e-a3a9-39edb7665639"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-816 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 1.7k+ times </p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1135%3B0%3A10526?alt=media&token=93a72005-9715-4954-9d25-4b510713b47b"
+                  alt="Not Found"
+                  className="line"
                 />
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight2Props.viewCount}
-                  number={authorWebItemV3OnLight2Props.number}
-                  art={authorWebItemV3OnLight2Props.art}
-                  className={authorWebItemV3OnLight2Props.className}
+              </div>
+              <div className="collections-list-web-item-v-10-copy-2 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-756">8</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1136%3B0%3A10525?alt=media&token=6b9a0032-7764-4c6a-90aa-59c3acdf9173"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-4410 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 1.3k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1136%3B0%3A10526?alt=media&token=e30751dc-9eec-48a4-a3ac-c9d3965fcd18"
+                  alt="Not Found"
+                  className="line"
                 />
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight3Props.viewCount}
-                  number={authorWebItemV3OnLight3Props.number}
-                  art={authorWebItemV3OnLight3Props.art}
-                  className={authorWebItemV3OnLight3Props.className}
+              </div>
+            </div>
+            <div className="group-551 flex-row">
+              <div className="collections-list-web-item-v-10 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-756">3</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1137%3B0%3A10525?alt=media&token=a00311e8-6ea6-4e1c-9544-7dfe7ce1d45f"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-856 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 2.5k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1137%3B0%3A10526?alt=media&token=0963ce69-d6e4-42ac-8859-9ebe6d6a4ffa"
+                  alt="Not Found"
+                  className="line"
                 />
-              </CollectionsListWebItemVContainer>
-              <CollectionsListWebItemVContainer1>
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight4Props.viewCount}
-                  number={authorWebItemV3OnLight4Props.number}
-                  art={authorWebItemV3OnLight4Props.art}
-                  className={authorWebItemV3OnLight4Props.className}
+              </div>
+              <div className="collections-list-web-item-v-101 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-756">6</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1133%3B0%3A10525?alt=media&token=127b046d-51ed-4a4b-8156-42e9ba41a026"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-4410 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 1.6k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1133%3B0%3A10526?alt=media&token=a538f9db-dc0c-4d83-bb47-9a41c088f011"
+                  alt="Not Found"
+                  className="line"
                 />
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight5Props.viewCount}
-                  number={authorWebItemV3OnLight5Props.number}
-                  art={authorWebItemV3OnLight5Props.art}
-                  className={authorWebItemV3OnLight5Props.className}
+              </div>
+              <div className="collections-list-web-item-v-10-copy-2 flex-col-hstart-vstart">
+                <div className="group-1058 flex-row-vcenter">
+                  <p className="txt-756">9</p>
+                  <div className="group-288 flex-row-vend">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1134%3B0%3A10525?alt=media&token=11841a8d-3fc0-4218-b72f-496aa97b6b4c"
+                      alt="Not Found"
+                      className="art"
+                    />
+                    <div className="group-139 flex-col">
+                      <p className="txt-5104">Collection Name</p>
+                      <div className="user flex-row-vcenter-hstart">
+                        <p className="txt-1054">Username</p>
+                      </div>
+                    </div>
+                    <p className="txt-436 flex-hend">viewed 1k+ times</p>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1134%3B0%3A10526?alt=media&token=0b1fdc1c-1028-4677-836a-198091591cea"
+                  alt="Not Found"
+                  className="line"
                 />
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight6Props.viewCount}
-                  number={authorWebItemV3OnLight6Props.number}
-                  art={authorWebItemV3OnLight6Props.art}
-                  className={authorWebItemV3OnLight6Props.className}
+              </div>
+            </div>
+          </div>
+          <div className="buttons-label-filled-resting-onlight-copy flex-col-hstart-vstart">
+            <p className="txt-744 flex-hcenter">Load More</p>
+          </div>
+        </div>
+        <div className="trending flex-col-hstart-vstart">
+          <div className="group-727 flex-col">
+            <div className="trending-albums flex-row-vstart-hstart">
+              <div className="marketplace-item-v-1-onlight flex-col-hstart-vstart">
+                <div className="group-872 flex-row">
+                  <div className="element-tags-00d-066-soft flex-col-hstart-vstart">
+                    <p className="txt-126 flex-hcenter">Emerging Artist</p>
+                  </div>
+                  <div className="buttons-icon-label-transparent-resting-onlight flex-col-hstart-vstart">
+                    <div className="link flex-row-vcenter-hcenter">
+                      <p className="txt-8106">24</p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A37042%3B0%3A11235?alt=media&token=2cfe9105-c46e-4ac5-af0b-8159a3c4192d"
+                  alt="Not Found"
+                  className="art-1"
                 />
-              </CollectionsListWebItemVContainer1>
-              <ListWebItemVCopyContainer>
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight7Props.viewCount}
-                  number={authorWebItemV3OnLight7Props.number}
-                  art={authorWebItemV3OnLight7Props.art}
-                  className={authorWebItemV3OnLight7Props.className}
+                <p className="txt-176">Album Name</p>
+                <div className="user flex-row-vcenter-hstart">
+                  <p className="txt-726">Artist Name</p>
+                </div>
+              </div>
+              <div className="marketplace-item-v-1-onlight-copy-4 flex-col-hend-vstart">
+                <div className="buttons-icon-label-transparent-resting-onlight-1 flex-col-hstart-vstart">
+                  <div className="link flex-row-vcenter-hcenter">
+                    <p className="txt-8106">32</p>
+                  </div>
+                </div>
+                <div className="flex-col">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A37040%3B0%3A11235?alt=media&token=aca9252d-bb06-4e1d-bc2a-24002bf2d67f"
+                    alt="Not Found"
+                    className="art-1"
+                  />
+                  <p className="txt-176">Album Name</p>
+                  <div className="user flex-row-vcenter-hstart">
+                    <p className="txt-726">Artist Name</p>
+                  </div>
+                </div>
+              </div>
+              <div className="marketplace-item-v-1-onlight-copy-4 flex-col-hend-vstart">
+                <div className="buttons-icon-label-transparent-resting-onlight-1 flex-col-hstart-vstart">
+                  <div className="link flex-row-vcenter-hcenter">
+                    <p className="txt-8106">20</p>
+                  </div>
+                </div>
+                <div className="flex-col">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A37043%3B0%3A11235?alt=media&token=83993df9-b81b-4f94-bccf-e8c7e3ddd964"
+                    alt="Not Found"
+                    className="art-1"
+                  />
+                  <p className="txt-176">Album Name</p>
+                  <div className="user flex-row-vcenter-hstart">
+                    <p className="txt-726">Artist Name</p>
+                  </div>
+                </div>
+              </div>
+              <div className="marketplace-item-v-1-onlight-copy-5 flex-col-hstart-vstart">
+                <div className="group-872 flex-row">
+                  <div className="element-tags-f-5f-5fa-onlight flex-col-hstart-vstart">
+                    <p className="txt-7441 flex-hcenter">Hot right now 🔥</p>
+                  </div>
+                  <div className="buttons-icon-label-transparent-resting-onlight flex-col-hstart-vstart">
+                    <div className="link flex-row-vcenter-hcenter">
+                      <p className="txt-8106">28</p>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A37041%3B0%3A11235?alt=media&token=5dc8dc94-efcd-43a9-bb0a-55758f902630"
+                  alt="Not Found"
+                  className="art-1"
                 />
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight8Props.viewCount}
-                  number={authorWebItemV3OnLight8Props.number}
-                  art={authorWebItemV3OnLight8Props.art}
-                  className={authorWebItemV3OnLight8Props.className}
-                />
-                <AuthorWebItemV3OnLight
-                  viewCount={authorWebItemV3OnLight9Props.viewCount}
-                  number={authorWebItemV3OnLight9Props.number}
-                  art={authorWebItemV3OnLight9Props.art}
-                  className={authorWebItemV3OnLight9Props.className}
-                />
-              </ListWebItemVCopyContainer>
-            </Grid>
-            <ButtonsLabelFilledRestingOnLight className={buttonsLabelFilledRestingOnLightPro.className} />
-          </MostViewed>
-          <Trending>
-            <TrendingAlbumsContainer>
-              <TrendingAlbums
-                marketplaceItemV7OnLightProps={trendingAlbums1Props.marketplaceItemV7OnLightProps}
-                marketplaceItemV7OnLight21Props={trendingAlbums1Props.marketplaceItemV7OnLight21Props}
-                marketplaceItemV7OnLight22Props={trendingAlbums1Props.marketplaceItemV7OnLight22Props}
-                marketplaceItemV7OnLight3Props={trendingAlbums1Props.marketplaceItemV7OnLight3Props}
-              />
-              <TrendingAlbums1>{trendingAlbums}</TrendingAlbums1>
-            </TrendingAlbumsContainer>
-            <Slider>
-              <ButtonsIconOutlineRestingOnLight className={buttonsIconOutlineRestingOnLight1Pr.className}>
-                {buttonsIconOutlineRestingOnLight1Pr.children}
-              </ButtonsIconOutlineRestingOnLight>
-              <Points>
-                <Rectangle></Rectangle>
-                <OvalCopy></OvalCopy>
-                <OvalCopy></OvalCopy>
-                <OvalCopy></OvalCopy>
-              </Points>
-              <ButtonsIconOutlineRestingOnLight className={buttonsIconOutlineRestingOnLight2Pr.className}>
-                {buttonsIconOutlineRestingOnLight2Pr.children}
-              </ButtonsIconOutlineRestingOnLight>
-            </Slider>
-          </Trending>
-          <Browse>
-            <BrowsePopularAlbums>{browsePopularAlbums}</BrowsePopularAlbums>
-            <OverlapGroup5>
-              <OverlapGroup1>
-                <OverlapGroup2>
-                  <Active>
-                    <ElementTabsLabelActiveOnLight>
-                      {elementTabsLabelActiveOnLightProps.children}
-                    </ElementTabsLabelActiveOnLight>
-                    <Line3 src="/img/line-3@2x.svg" />
-                  </Active>
-                  <Line2 src="/img/line-2@1x.svg" />
-                </OverlapGroup2>
-                <ElementTabsLabelRestingOnLight>
-                  {elementTabsLabelRestingOnLight1Prop.children}
-                </ElementTabsLabelRestingOnLight>
-                <ElementTabsLabelRestingOnLight className={elementTabsLabelRestingOnLight2Prop.className}>
-                  {elementTabsLabelRestingOnLight2Prop.children}
-                </ElementTabsLabelRestingOnLight>
-                <ElementTabsLabelRestingOnLight className={elementTabsLabelRestingOnLight3Prop.className}>
-                  {elementTabsLabelRestingOnLight3Prop.children}
-                </ElementTabsLabelRestingOnLight>
-              </OverlapGroup1>
-              <TrendingAlbums
-                className={trendingAlbums2Props.className}
-                marketplaceItemV7OnLightProps={trendingAlbums2Props.marketplaceItemV7OnLightProps}
-                marketplaceItemV7OnLight21Props={trendingAlbums2Props.marketplaceItemV7OnLight21Props}
-                marketplaceItemV7OnLight22Props={trendingAlbums2Props.marketplaceItemV7OnLight22Props}
-                marketplaceItemV7OnLight3Props={trendingAlbums2Props.marketplaceItemV7OnLight3Props}
-              />
-            </OverlapGroup5>
-            <ButtonsLabelFilledRestingOnLight className={buttonsLabelFilledRestingOnLightPro2.className} />
-          </Browse>
-          <NavigationWebFooterOnLight {...navigationWebFooterOnLightProps} />
+                <p className="txt-176">Album Name</p>
+                <div className="user flex-row-vcenter-hstart">
+                  <p className="txt-726">Artist Name</p>
+                </div>
+              </div>
+            </div>
+            <div className="user flex-row-vcenter-hstart">
+              <div className="buttons-icon-outline-resting-onlight-copy flex-col-hstart-vstart">
+                <p className="txt-833 flex-hcenter"></p>
+              </div>
+              <div className="points flex-row">
+                <div className="rectangle" />
+                <div className="oval-copy" />
+                <div className="oval-copy" />
+                <div className="oval-copy-3" />
+              </div>
+              <div className="buttons-icon-outline-resting-onlight flex-col-hstart-vstart">
+                <p className="txt-833 flex-hcenter"></p>
+              </div>
+            </div>
+          </div>
+          <p className="txt-542">Trending Albums</p>
         </div>
       </div>
-    );
-  }
+      <div className="navigation-web-footer-bar-onlight-copy flex-col-hcenter-vstart">
+        <div className="group-831 flex-row">
+          <div className="group-283 flex-col">
+            <div className="subscribe flex-col-hstart-vstart">
+              <p className="txt-8331">Subscribe to updates</p>
+              <div className="forms-v1-select-resting-onlight flex-col-hstart-vstart">
+                <div className="group-25101">
+                  <p className="txt-9410">Enter your e-mail</p>
+                </div>
+              </div>
+            </div>
+            <div className="follow flex-col-hstart-vstart">
+              <p className="txt-374">Follow us</p>
+              <div className="group-551 flex-row">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1089%3B0%3A12352?alt=media&token=c28d3c81-737d-4776-b614-fdcf561da36e"
+                  alt="Not Found"
+                  className="buttons-icon-filled-resting-onlight"
+                />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1089%3B0%3A12353?alt=media&token=c277195a-336e-4740-85d4-dc34d3c8c0e1"
+                  alt="Not Found"
+                  className="buttons-icon-filled-resting-onlight"
+                />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1089%3B0%3A12354?alt=media&token=b45904bf-ad86-461b-90fa-edf5c3ed3b84"
+                  alt="Not Found"
+                  className="buttons-icon-filled-resting-onlight"
+                />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1089%3B0%3A12355?alt=media&token=f078a9f7-61de-4997-8fd5-33e1ffac9eab"
+                  alt="Not Found"
+                  className="buttons-icon-filled-resting-onlight"
+                />
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1089%3B0%3A12356?alt=media&token=b4d683ac-7e99-44d1-a0da-969d0e289b0f"
+                  alt="Not Found"
+                  className="buttons-icon-filled-resting-onlight-copy-4"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="links flex-col-hstart-vstart">
+            <p className="txt-741">Marketplace</p>
+            <p className="txt-839">
+              Explore Help Center Become a Partner About Us Platform Status
+            </p>
+          </div>
+          <div className="links-1 flex-col-hstart-vstart">
+            <p className="txt-741">Community</p>
+            <p className="txt-839">
+              Profile Favorites Watchlist My Collections Rankings Activity
+            </p>
+          </div>
+          <div className="language flex-col-hstart-vstart">
+            <p className="txt-482">MyRecords</p>
+            <p className="txt-162">
+              Our marketplace is the world's largest collection of vinyl from
+              the best artists worldwide.{" "}
+            </p>
+          </div>
+        </div>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1089%3B0%3A12336?alt=media&token=5937c3ad-aee9-46c6-a312-e56e67639de0"
+          alt="Not Found"
+          className="line-1"
+        />
+        <div className="group-4105 flex-row-vcenter">
+          <div className="links-2 flex-row-vstart-hstart clip-contents">
+            <p className="txt-696">Privacy Policy</p>
+            <p className="txt-696">License</p>
+            <p className="txt-696">API</p>
+            <p className="txt-207">© 2022 All rights reserved</p>
+          </div>
+          <div className="buttons-label-icon-transparent-resting-onlight-copy flex-col-hstart-vstart">
+            <div className="link flex-row-vcenter-hcenter">
+              <p className="txt-8106">English</p>
+            </div>
+          </div>
+          <div className="buttons-icon-outline-resting-onlight-2 flex-col-hstart-vstart"></div>
+        </div>
+      </div>
+      <div className="browse flex-col-hstart-vstart">
+        <div className="group-714 flex-col-hcenter">
+          <p className="txt-475 flex-hcenter">Browse popular albums</p>
+          <div className="tabs">
+            <div className="group-7107 flex-row">
+              <div className="active flex-col">
+                <div className="element-tags-f-5f-5fa-editable-onlight flex-col-hstart-vstart">
+                  <p className="txt-892 flex-hcenter">All</p>
+                </div>
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-0%3A1100?alt=media&token=a8c35e84-0763-436d-80ce-27ec44f506e2"
+                  alt="Not Found"
+                  className="line-3"
+                />
+              </div>
+              <div className="element-tags-f-5f-5fa-editable-onlight-copy flex-col-hstart-vstart">
+                <p className="txt-7442 flex-hcenter">Trending</p>
+              </div>
+              <div className="element-tags-f-5f-5fa-editable-onlight-copy-2 flex-col-hstart-vstart">
+                <p className="txt-7442 flex-hcenter">What’s New</p>
+              </div>
+              <div className="element-tags-f-5f-5fa-editable-onlight-copy-4 flex-col-hstart-vstart">
+                <p className="txt-7442 flex-hcenter">Classics</p>
+              </div>
+            </div>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-0%3A1106?alt=media&token=36641c8e-f716-45e7-8178-2520682fd68b"
+              alt="Not Found"
+              className="line-2"
+            />
+          </div>
+          <div className="buttons-label-filled-resting-onlight-copy flex-col-hstart-vstart">
+            <p className="txt-744 flex-hcenter">Load More</p>
+          </div>
+        </div>
+        <div className="popular-albums flex-row-vstart-hstart">
+          <div className="marketplace-item-v-1-onlight flex-col-hstart-vstart">
+            <div className="group-872 flex-row">
+              <div className="element-tags-00d-066-soft1 flex-col-hstart-vstart">
+                <p className="txt-126 flex-hcenter">Emerging Artist</p>
+              </div>
+              <div className="buttons-icon-label-transparent-resting-onlight flex-col-hstart-vstart">
+                <div className="link flex-row-vcenter-hcenter">
+                  <p className="txt-8106">24</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A36968%3B0%3A11235?alt=media&token=ec6e81ee-b4ff-4c66-a342-c34992e1b43b"
+              alt="Not Found"
+              className="art-1"
+            />
+            <p className="txt-176">Album Name</p>
+            <div className="user flex-row-vcenter-hstart">
+              <p className="txt-726">Artist Name</p>
+            </div>
+          </div>
+          <div className="marketplace-item-v-1-onlight-copy-4 flex-col-hend-vstart">
+            <div className="buttons-icon-label-transparent-resting-onlight-1 flex-col-hstart-vstart">
+              <div className="link flex-row-vcenter-hcenter">
+                <p className="txt-8106">32</p>
+              </div>
+            </div>
+            <div className="flex-col">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A36966%3B0%3A11235?alt=media&token=486e25df-0339-436c-9c2f-512ec06d5184"
+                alt="Not Found"
+                className="art-1"
+              />
+              <p className="txt-176">Album Name</p>
+              <div className="user flex-row-vcenter-hstart">
+                <p className="txt-726">Artist Name</p>
+              </div>
+            </div>
+          </div>
+          <div className="marketplace-item-v-1-onlight-copy-4 flex-col-hend-vstart">
+            <div className="buttons-icon-label-transparent-resting-onlight-1 flex-col-hstart-vstart">
+              <div className="link flex-row-vcenter-hcenter">
+                <p className="txt-8106">20</p>
+              </div>
+            </div>
+            <div className="flex-col">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A36969%3B0%3A11235?alt=media&token=e3b87e7a-4f74-4f7c-a0ba-474f5dfc8cb9"
+                alt="Not Found"
+                className="art-1"
+              />
+              <p className="txt-176">Album Name</p>
+              <div className="user flex-row-vcenter-hstart">
+                <p className="txt-726">Artist Name</p>
+              </div>
+            </div>
+          </div>
+          <div className="marketplace-item-v-1-onlight-copy-5 flex-col-hstart-vstart">
+            <div className="group-872 flex-row">
+              <div className="element-tags-f-5f-5fa-onlight-1 flex-col-hstart-vstart">
+                <p className="txt-7441 flex-hcenter">Hot right now 🔥</p>
+              </div>
+              <div className="buttons-icon-label-transparent-resting-onlight flex-col-hstart-vstart">
+                <div className="link flex-row-vcenter-hcenter">
+                  <p className="txt-8106">28</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I35%3A36967%3B0%3A11235?alt=media&token=5c029bee-bd7d-4899-a558-6927872c361e"
+              alt="Not Found"
+              className="art-1"
+            />
+            <p className="txt-176">Album Name</p>
+            <div className="user flex-row-vcenter-hstart">
+              <p className="txt-726">Artist Name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="promo">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-0%3A1146?alt=media&token=f792e3bb-e423-4770-aab2-dde1d8e99bb3"
+          alt="Not Found"
+          className="bg"
+        />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-0%3A1152?alt=media&token=0d10fa54-2188-44ca-80b9-ea6e2e5e632b"
+          alt="Not Found"
+          className="images"
+        />
+        <div className="title-1 flex-col-hcenter-vstart">
+          <p className="txt-348 flex-hcenter">
+            Discover and build your vinyl collection.
+          </p>
+          <p className="txt-444 flex-hcenter">
+            MyRecords is the world's largest collection of vinyl from the best
+            artists worldwide.{" "}
+          </p>
+        </div>
+        <div className="search flex-row-vend-hstart">
+          <p className="txt-645">Search vinyl, artists, and collections</p>
+          <div className="buttons-icon-filled-active-onlight flex-col-hstart-vstart">
+            <p className="txt-1093 flex-hcenter"></p>
+          </div>
+        </div>
+      </div>
+      <div className="highlight-albums flex-col-hcenter-vstart">
+        <p className="txt-883">What the world is listening to</p>
+        <div className="group-551 flex-row">
+          <div className="marketplace-item-v-1-onlight flex-col-hstart-vstart">
+            <div className="group-872 flex-row">
+              <div className="element-tags-00d-066-soft2 flex-col-hstart-vstart">
+                <p className="txt-126 flex-hcenter">Emerging Artist</p>
+              </div>
+              <div className="buttons-icon-label-transparent-resting-onlight flex-col-hstart-vstart">
+                <div className="link flex-row-vcenter-hcenter">
+                  <p className="txt-8106">24</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1188%3B0%3A11235?alt=media&token=067c5f3e-68f2-443b-8ffe-4c71a086da57"
+              alt="Not Found"
+              className="art-1"
+            />
+            <p className="txt-176">Album Name</p>
+            <div className="user flex-row-vcenter-hstart">
+              <p className="txt-726">Artist Name</p>
+            </div>
+          </div>
+          <div className="marketplace-item-v-1-onlight-copy-4 flex-col-hend-vstart">
+            <div className="buttons-icon-label-transparent-resting-onlight-1 flex-col-hstart-vstart">
+              <div className="link flex-row-vcenter-hcenter">
+                <p className="txt-8106">32</p>
+              </div>
+            </div>
+            <div className="flex-col">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1186%3B0%3A11235?alt=media&token=afe7c518-e642-4dfd-98cc-6c3e9e785787"
+                alt="Not Found"
+                className="art-1"
+              />
+              <p className="txt-176">Album Name</p>
+              <div className="user flex-row-vcenter-hstart">
+                <p className="txt-726">Artist Name</p>
+              </div>
+            </div>
+          </div>
+          <div className="marketplace-item-v-1-onlight-copy-4 flex-col-hend-vstart">
+            <div className="buttons-icon-label-transparent-resting-onlight-1 flex-col-hstart-vstart">
+              <div className="link flex-row-vcenter-hcenter">
+                <p className="txt-8106">20</p>
+              </div>
+            </div>
+            <div className="flex-col">
+              <img
+                src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1189%3B0%3A11235?alt=media&token=ecaf6224-eb53-485f-92b5-b9945a0a5776"
+                alt="Not Found"
+                className="art-1"
+              />
+              <p className="txt-176">Album Name</p>
+              <div className="user flex-row-vcenter-hstart">
+                <p className="txt-726">Artist Name</p>
+              </div>
+            </div>
+          </div>
+          <div className="marketplace-item-v-1-onlight-copy-5 flex-col-hstart-vstart">
+            <div className="group-872 flex-row">
+              <div className="element-tags-f-5f-5fa-onlight-2 flex-col-hstart-vstart">
+                <p className="txt-7441 flex-hcenter">Hot right now 🔥</p>
+              </div>
+              <div className="buttons-icon-label-transparent-resting-onlight flex-col-hstart-vstart">
+                <div className="link flex-row-vcenter-hcenter">
+                  <p className="txt-8106">28</p>
+                </div>
+              </div>
+            </div>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1187%3B0%3A11235?alt=media&token=f5e6c52d-2304-4bb0-96de-9cd1d4635ce0"
+              alt="Not Found"
+              className="art-1"
+            />
+            <p className="txt-176">Album Name</p>
+            <div className="user flex-row-vcenter-hstart">
+              <p className="txt-726">Artist Name</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="navigation-web-top-bar-wlinks-onlight-copy flex-row-vstart-hstart">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/fldtu29io0v-I0%3A1191%3B0%3A12410?alt=media&token=5de1496c-4d86-4e0c-8144-8e5a6510a2a4"
+          alt="Not Found"
+          className="element-logo-hidden"
+        />
+        <img src="image unavailable" alt="Not Found" className="search-1" />
+        <div className="links-3 flex-row-vcenter-hend">
+          <p className="txt-7102">Explore</p>
+          <p className="txt-122">Profile</p>
+        </div>
+        <div className="buttons-label-filled-resting-onlight flex-col-hstart-vstart">
+          <p className="txt-51041 flex-hcenter">Join</p>
+        </div>
+        <div className="buttons-label-filled-resting-onlight-copy-1 flex-col-hstart-vstart">
+          <p className="txt-892 flex-hcenter">Sign In</p>
+        </div>
+      </div>
+    </div>
+  )
 }
-
-const OverlapGroup8 = styled.div`
-  width: 1571px;
-  height: 1215px;
-  position: relative;
-  margin-left: -67px;
-`;
-
-const OverlapGroup7 = styled.div`
-  position: absolute;
-  width: 1571px;
-  height: 716px;
-  top: 0;
-  left: 0;
-`;
-
-const Bg = styled.img`
-  position: absolute;
-  width: 1447px;
-  height: 716px;
-  top: 0;
-  left: 63px;
-`;
-
-const Images = styled.div`
-  position: absolute;
-  height: 315px;
-  top: 193px;
-  left: 0;
-  display: flex;
-  align-items: flex-start;
-  min-width: 1571px;
-`;
-
-const FlexRow = styled.div`
-  height: 293px;
-  align-self: flex-end;
-  margin-bottom: 0;
-  display: flex;
-  align-items: flex-start;
-  min-width: 324px;
-`;
-
-const Images1 = styled.img`
-  width: 93px;
-  height: 157px;
-`;
-
-const ImagesContainer = styled.div`
-  width: 164px;
-  align-self: flex-end;
-  margin-left: 67px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 252px;
-`;
-
-const Images2 = styled.img`
-  width: 118px;
-  height: 116px;
-  align-self: flex-end;
-`;
-
-const Images3 = styled.img`
-  width: 96px;
-  height: 94px;
-  margin-top: 43px;
-`;
-
-const FlexCol = styled.div`
-  width: 271px;
-  margin-left: 919px;
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  min-height: 305px;
-`;
-
-const ImagesContainer1 = styled.div`
-  display: flex;
-  align-items: flex-end;
-  min-width: 271px;
-`;
-
-const Images4 = styled.img`
-  width: 160px;
-  height: 157px;
-`;
-
-const Images5 = styled.img`
-  width: 39px;
-  height: 94px;
-  margin-left: 72px;
-  margin-bottom: 0;
-`;
-
-const Images6 = styled.img`
-  width: 117px;
-  height: 115px;
-  margin-top: 33px;
-  margin-right: 33.69px;
-`;
-
-const Title = styled.div`
-  position: absolute;
-  width: 726px;
-  top: 187px;
-  left: 426px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 192px;
-`;
-
-const DiscoverCollectA = styled.h1`
-  width: 726px;
-  margin-top: -1px;
-  min-height: 130px;
-  font-family: var(--font-family-inter);
-  font-weight: 800;
-  color: var(--x000000primary);
-  font-size: 54px;
-  text-align: center;
-  letter-spacing: 0;
-`;
-
-const OurMarketplaceIs = styled.p`
-  ${TextLabels16pxRegular}
-  width: 470px;
-  min-height: 47px;
-  margin-top: 15px;
-  margin-left: 0;
-  font-weight: 400;
-  color: var(--x000000primary);
-  text-align: center;
-  line-height: 24px;
-`;
-
-const OverlapGroup = styled.div`
-  position: absolute;
-  width: 635px;
-  height: 85px;
-  top: 417px;
-  left: 472px;
-  background-color: var(--white-2);
-  border-radius: 86px;
-  box-shadow: 0px 20px 90px #0000000f;
-  backdrop-filter: blur(62.52048110961914px) brightness(100%);
-  -webkit-backdrop-filter: blur(62.52048110961914px) brightness(100%);
-`;
-
-const Bg1 = styled.div`
-  position: absolute;
-  width: 635px;
-  height: 85px;
-  top: 0;
-  left: 0;
-  background-color: var(--ffffff);
-  border-radius: 86px;
-  opacity: 0.6;
-`;
-
-const FieldTitle = styled.p`
-  ${ButtonLabels16px}
-  position: absolute;
-  top: 31px;
-  left: 35px;
-  font-weight: 700;
-  color: var(--x000000primary);
-  line-height: 24px;
-  white-space: nowrap;
-`;
-
-const HighlightAlbums = styled.div`
-  position: absolute;
-  width: 1280px;
-  top: 667px;
-  left: 147px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 548px;
-`;
-
-const SelectedNotableDro = styled.div`
-  ${HeadingH3}
-  min-height: 34px;
-  min-width: 404px;
-  font-weight: 800;
-  color: var(--x000000primary);
-`;
-
-const MarketplaceItemVOnlightContainer = styled.div`
-  height: 408px;
-  position: relative;
-  margin-top: 42px;
-  display: flex;
-  align-items: flex-start;
-  min-width: 1280px;
-`;
-
-const NavigationWebTopBarWLinksOnLightCop = styled.img`
-  position: absolute;
-  width: 1440px;
-  height: 84px;
-  top: 3px;
-  left: 67px;
-`;
-
-const MostViewed = styled.div`
-  width: 1280px;
-  position: relative;
-  align-self: center;
-  margin-top: 90px;
-  margin-right: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 450px;
-`;
-
-const Title1 = styled.div`
-  height: 34px;
-  margin-left: 0.5px;
-  display: flex;
-  align-items: flex-end;
-  min-width: 514px;
-`;
-
-const MostViewedCollections = styled.div`
-  ${HeadingH3}
-  margin-left: -13px;
-  min-height: 34px;
-  min-width: 337px;
-  font-weight: 800;
-  color: var(--x000000primary);
-`;
-
-const Last7Days = styled.div`
-  ${HeadingH3}
-  min-height: 34px;
-  margin-left: 12px;
-  min-width: 148px;
-  font-weight: 800;
-  color: var(--x7a52f4--hover);
-`;
-
-const Arrow = styled.div`
-  ${Icons28px}
-  min-height: 34px;
-  margin-left: 12px;
-  margin-bottom: -6px;
-  min-width: 11px;
-  font-weight: 400;
-  color: var(--x7a52f4--hover);
-  text-align: center;
-`;
-
-const Grid = styled.div`
-  height: 278px;
-  margin-top: 60px;
-  display: flex;
-  align-items: flex-start;
-  min-width: 1280px;
-`;
-
-const CollectionsListWebItemVContainer = styled.div`
-  width: 410px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 278px;
-`;
-
-const CollectionsListWebItemVContainer1 = styled.div`
-  width: 410px;
-  position: relative;
-  margin-left: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 278px;
-`;
-
-const ListWebItemVCopyContainer = styled.div`
-  width: 410px;
-  position: relative;
-  margin-left: 26px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 278px;
-`;
-
-const Trending = styled.div`
-  width: 1280px;
-  align-self: center;
-  margin-top: 90px;
-  margin-right: 7px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-height: 630px;
-`;
-
-const TrendingAlbumsContainer = styled.div`
-  width: 1280px;
-  height: 575px;
-  position: relative;
-  margin-left: -3px;
-`;
-
-const TrendingAlbums1 = styled.div`
-  ${HeadingH3}
-  position: absolute;
-  top: 0;
-  left: 521px;
-  font-weight: 800;
-  color: var(--x000000primary);
-`;
-
-const Slider = styled.div`
-  height: 46px;
-  position: relative;
-  margin-top: 9px;
-  display: flex;
-  align-items: center;
-  min-width: 1280px;
-`;
-
-const Points = styled.div`
-  height: 8px;
-  margin-left: 565px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  min-width: 58px;
-`;
-
-const Rectangle = styled.div`
-  width: 18px;
-  height: 10px;
-  margin-top: -1px;
-  background-color: #00000033;
-  border-radius: 4px;
-`;
-
-const OvalCopy = styled.div`
-  width: 10px;
-  height: 10px;
-  margin-left: 4px;
-  margin-top: -1px;
-  background-color: var(--white);
-  border-radius: 5px;
-`;
-
-const Browse = styled.div`
-  width: 1440px;
-  position: relative;
-  margin-top: 90px;
-  margin-left: -7px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 694px;
-`;
-
-const BrowsePopularAlbums = styled.div`
-  ${HeadingH3}
-  min-height: 34px;
-  margin-left: 1px;
-  min-width: 325px;
-  font-weight: 800;
-  color: var(--x000000primary);
-  text-align: center;
-`;
-
-const OverlapGroup5 = styled.div`
-  width: 1434px;
-  height: 569px;
-  position: relative;
-  margin-top: 34px;
-  margin-right: 6.5px;
-`;
-
-const OverlapGroup1 = styled.div`
-  position: absolute;
-  width: 1434px;
-  height: 51px;
-  top: 0;
-  left: 0;
-`;
-
-const OverlapGroup2 = styled.div`
-  position: absolute;
-  width: 1434px;
-  height: 50px;
-  top: 1px;
-  left: 0;
-`;
-
-const Active = styled.div`
-  position: absolute;
-  height: 50px;
-  top: 0;
-  left: 463px;
-  display: flex;
-  align-items: flex-start;
-  min-width: 23px;
-`;
-
-const Line3 = styled.img`
-  width: 24px;
-  height: 2px;
-  align-self: flex-end;
-  margin-left: 441px;
-  margin-bottom: -1px;
-`;
-
-const Line2 = styled.img`
-  position: absolute;
-  width: 1434px;
-  height: 1px;
-  top: 48px;
-  left: 0;
-`;
-
-export default Landing;

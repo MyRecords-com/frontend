@@ -14,6 +14,8 @@ function RegisterPage() {
   };
 
   return (
+        <>
+        <div style={{'padding-bottom': 36}}></div>    
     <div className="signup">
         <h1 className="text-center">MyRecords Registration</h1>
         <form onSubmit={handleSubmit} className="col-lg-6 offset-lg-3">
@@ -57,6 +59,7 @@ function RegisterPage() {
         <button>Register</button>
         </form>
     </div>
+    </>
     );
 }
 

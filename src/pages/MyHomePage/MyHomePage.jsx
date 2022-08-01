@@ -10,6 +10,7 @@ import AuthContext from "../../context/AuthContext";
 import { Navigate } from "react-router-dom";
 
 
+
 export default function MyHomePage() {
   
   let [ releases, setReleases ] = useState([])
@@ -31,6 +32,7 @@ export default function MyHomePage() {
 
     return (
       <>
+      <div style={{'padding-bottom': 36}}></div>
       <div className="container">
       <div>
       <Carousel />
