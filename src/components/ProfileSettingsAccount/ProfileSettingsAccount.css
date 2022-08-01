@@ -1,0 +1,10 @@
+.profile-settings-account {
+  align-items: flex-start;
+  background-color: var(--ffffff);
+  display: flex;
+  flex-direction: column;
+  height: 1009px;
+  position: relative;
+  width: 1440px;
+}
+

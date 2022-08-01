@@ -1,0 +1,28 @@
+:root { 
+  --cfdbd5--outline--onlight: #cfdbd599;
+  --cfdbd5--outline-dashed--onlight: #cfdbd599;
+  --ebf0f0soft-onlight: #ebf0f080;
+  --ffffff: #ffffff;
+  --white: #ffffffcc;
+  --white-2: #ffffff1a;
+  --without-fill: transparent;
+  --x000000primary: #000000;
+  --x000000soft: #000000;
+  --x03db80: #03db80;
+  --x5d5d5b: #5d5d5b;
+  --x7a52f4--hover: #7a52f4;
+  --x7a52f4--resting: #7a52f4;
+  --x7a52f4primary: #7a52f4;
+ 
+  --font-size-20px: 20px;
+  --font-size-l: 16px;
+  --font-size-m: 14px;
+  --font-size-s: 12px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 22px;
+  --font-size-xxxl: 28px;
+  --font-size-xxxxl: 42px;
+ 
+  --font-family-actor: "Actor", Helvetica;
+  --font-family-inter: "Inter", Helvetica;
+}

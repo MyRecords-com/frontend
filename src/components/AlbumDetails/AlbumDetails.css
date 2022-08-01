@@ -1,0 +1,11 @@
+.album-details {
+  align-items: center;
+  background-color: var(--ffffff);
+  display: flex;
+  flex-direction: column;
+  height: 1350px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+

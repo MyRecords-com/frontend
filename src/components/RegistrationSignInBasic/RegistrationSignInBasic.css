@@ -1,0 +1,9 @@
+.registration-sign-in-basic {
+  align-items: flex-start;
+  background-color: var(--ffffff);
+  display: flex;
+  height: 900px;
+  overflow: hidden;
+  width: 1440px;
+}
+
