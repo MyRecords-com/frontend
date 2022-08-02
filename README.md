@@ -13,6 +13,9 @@ Whose it made for? Enthusiasts/DJ's/Music Producers
 ## ERD
 [https://drive.google.com/file/d/1vrA0SXIo8tfxlDK135lWu_CftT-2NMHI/view?usp=sharing]
 
+## Wireframes
+[https://whimsical.com/my-records-RMcTSfQHsdnKTy8Ri6fkXH]
+
 ### Why I chose this project concept:
 - I have a strong passion for music, am a vinyl enthusiast, and have DJ’d in the past. A platform like is a fantastic way for vinyl enthusiasts, DJs, and music producers to discover new vinyl and connect with what the world is collectively listening to. I envisioned that over time as this platform transforms into a full blown marketplace, that it becomes the go-to online destination for the vinyl community.
 
