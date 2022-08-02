@@ -19,13 +19,13 @@ function LoginPage() {
       <form onSubmit={handleSubmit} className="col-lg-6 offset-lg-3">
         <div class="form-group">
           <div>
-            <label htmlFor="username"><h2>Username</h2></label>
+            <label htmlFor="username"><h5>Username</h5></label>
           </div>
           <input type="text" id="username" placeholder="Enter Username" />
         </div>
         <div class="form-group">
           <div>
-            <label htmlFor="password"><h2>Password</h2></label>
+            <label htmlFor="password"><h5>Password</h5></label>
           </div>
           <input 
             type="password" 
@@ -34,7 +34,8 @@ function LoginPage() {
           />
         </div>
         <br></br><button type="submit" className="btn btn-secondary">Login</button>
-      </form>
+      </form><br></br>
+      Not A User? <a href='register/'><b>Sign Up!</b></a>
     </div>
   );
 };

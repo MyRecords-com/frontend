@@ -3,7 +3,7 @@ import Profile from '../../components/Profile/Profile'
 import * as profileAPI from '../../utilities/profile-api';
 import './bootstrap2.css'
 import AuthContext from '../../context/AuthContext'
-
+import myAva from '../../img/art-6@2x.png'
 
 export default function MyDashboard() {
     
@@ -48,7 +48,7 @@ useEffect(() => {
 
           <nav aria-label="breadcrumb" class="main-breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
               <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
               <li class="breadcrumb-item active" aria-current="page">User Profile</li>
             </ol>
@@ -60,13 +60,13 @@ useEffect(() => {
               <div class="card">
                 <div class="card-body">
                   <div class="d-flex flex-column align-items-center text-center">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150" />
+                    <img src={myAva} alt="Admin" class="rounded-circle" width="278" />
                     <div class="mt-3">
                       <h4>{profile.user}</h4>
                       <p class="text-secondary mb-1"><b>Member Since:</b> {profile.created_date}</p>
                       <p class="text-muted font-size-sm">{profile.location}</p>
-                      <button class="btn btn-primary">Follow</button>
-                      <button class="btn btn-outline-primary">Message</button>
+                      <a class="btn btn-info " href="/add">Follow</a>&nbsp;&nbsp;
+                      <a class="btn btn-info " href="/add">Message</a>
                     </div>
                   </div>
                 </div>
@@ -156,6 +156,10 @@ useEffect(() => {
                             })}<br></br>
                                 </div>
                             })}
+                            <div>
+                                <hr />
+                                Want to add a record? <a class="btn btn-info " href="/add">Add Record</a>
+                            </div>
                     </div>
                   </div>
                 </div>
