@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# RecordCrates.com
+---
+SEI 5/9
+Capstone Project(#4)
+Miles Lahn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it is
+Primarily serves as a repository for vinyl records.
+Tagline:
+- Front-facing description: Online directory of vinyl from around the world
+Whose it made for? Enthusiasts/DJ's/Music Producers
 
-## Available Scripts
+### Why I chose this project concept:
+- I have a strong passion for music, am a vinyl enthusiast, and have DJ’d in the past. A platform like is a fantastic way for vinyl enthusiasts, DJs, and music producers to discover new vinyl and connect with what the world is collectively listening to. I envisioned that over time as this platform transforms into a full blown marketplace, that it becomes the go-to online destination for the vinyl community.
 
-In the project directory, you can run:
+### Why I chose Django for my final project:
+- I chose Django because I first wanted to challenge myself. I secondly chose Django because I know that it is a popular language that I may come across in my future work, and wanted to begin to better understand its relevent stack and it’s capabilities.
 
-### `npm start`
+### What it could be in the future:
+- User-centric marketplace wherein usrs can add, share, and create vinyl collections publicly, as well as buy and trade vinyl
+- Albums can be added by producers/artists (suppliers) for commericial sale
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies used:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Frontend—
+- HTML
+- CSS
+- Javascript
+- React
+- Bootstrap 
+- NodeJS
 
-### `npm test`
+Backend–
+- Django
+- Python
+- PostgreSQL
+- Simple JWT— Authentication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Future functionality:
+- Multiple user collections
+- User can add album
+- User can save another user’s collection
+- Users can facilitate trade of physical vinyl (buying/selling)
+- U/I feedback of the top-owned vinyls, most-sold, etc. on landing page for display
+- Ratings and comments for albums and collections
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
