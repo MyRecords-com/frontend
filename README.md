@@ -1,4 +1,4 @@
-# RecordCrates.com
+# RecordCrates
 ---
 SEI 5/9
 Capstone Project(#4)
