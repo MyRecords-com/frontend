@@ -12,6 +12,6 @@ export function getCollection(authTokens) {
     return sendRequest(BASE_URLC,'GET', authTokens)
 }
 
-export function addRecord(addRecord) {
+export function addRecord(authTokens, addRecord) {
     return sendRequest(BASE_URLR, 'POST', authTokens, addRecord)
 }

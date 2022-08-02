@@ -1,6 +1,7 @@
 import * as profileAPI from '../../utilities/profile-api';
 import { useState, useEffect, useContext } from 'react'
 import AuthContext from '../../context/AuthContext'
+import { useNavigate } from "react-router-dom";
 
 export default function AddRecord() {
 
@@ -14,12 +15,15 @@ export default function AddRecord() {
           country: '',
           released: '',
           genre: '',
-          style: ''
+          style: '',
         }
     ])
 
     function handleSubmit(event) {
         event.preventDefault();
+        if (addRecord.collection !== '')
+        addNewRecords();
+        else return alert('Please select a collection to add record to...')
       }
     
     function handleChange(event) {
@@ -31,16 +35,23 @@ export default function AddRecord() {
         console.log(addRecord)
     }
 
+    let navigate = useNavigate();
 
     async function getCollection() {
         const collections = await profileAPI.getCollection(authTokens)
         setCollection(collections)
         console.log(collections)
     }
-    
+
     useEffect(() => {
         getCollection();
       }, []);
+      
+    async function addNewRecords() {
+        const addedRecord = await profileAPI.addRecord(authTokens, addRecord)
+        alert(addedRecord)
+        navigate('/dashboard')
+    }
 
 
     return (
@@ -54,6 +65,7 @@ export default function AddRecord() {
               <label htmlFor="username"><h2>Select Collection</h2></label>
             </div>
             <select name="collection" value={addRecord.collection} onChange={handleChange}>
+            <option value=''>Choose a Collection</option>
             {collection.map((nam, index) => {
             return <option value={nam.name} key={index}>{nam.name}</option>
             }
@@ -94,7 +106,7 @@ export default function AddRecord() {
             <div>
               <label htmlFor="style"><h2>Style</h2></label>
             </div>
-            <input type="text" id="style" placeholder="Enter Record Name" onChange={handleChange}/>
+            <input type="text" name='style' placeholder="Enter Record Name" onChange={handleChange}/>
           </div>
           <br></br><button type="submit" className="btn btn-secondary">Add to Collection</button>
         </form>
