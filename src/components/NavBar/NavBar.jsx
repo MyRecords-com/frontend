@@ -2,7 +2,7 @@ import profileimg from '../../img/img_avatar.png'
 import AuthContext from "../../context/AuthContext";
 import { useContext } from 'react'
 import LoginPage from '../LoginPage/LoginPage';
-
+import myLogo from '../../img/newsvg.svg'
 import './NavBar.css'
 export default function NavBar() {
     
@@ -15,7 +15,7 @@ if (user === null) {
     return (
 <nav className="navbar navbar-dark bg-dark fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">RecordHub</a>
+  <a className="navbar-brand" href="/"><img src={myLogo} style={{width: '30px', height: '30px'}}></img> RecordCrates</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -61,7 +61,8 @@ if (user === null) {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">RecordHub</a>
+      
+      <a className="navbar-brand" href="/"><img src={myLogo} style={{width: '30px', height: '30px'}}></img> RecordCrates</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>

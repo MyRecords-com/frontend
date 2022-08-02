@@ -36,7 +36,7 @@ export default function MyHomePage() {
       <div className="container-fluid">
       <div>
       <Carousel />
-      </div>
+      </div><br></br>
       <div className="container">
       <div>
         <h1>NEW RELEASES:</h1>
