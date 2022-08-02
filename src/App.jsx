@@ -21,6 +21,7 @@ import RegistrationSignInBasic from "./components/RegistrationSignInBasic";
 import Landing from "./components/Landing";
 import RegistrationSignInBasicDetails from "./components/RegistrationSignInBasicDetails";
 import TopImage from './img/-navigation--web---top-bar-w-links--onlight-copy@1x.png'
+import AddRecord from "./components/AddRecord/AddRecord";
 
 export default function App() {
 	return (
@@ -36,7 +37,8 @@ export default function App() {
 				<Route path="landing/" element={<Landing />} />
 				<Route path="/dashboard" element={<MyDashboard />} />
 				<Route path="/register" element={<RegisterPage />} />
-				<Route path="/login" element={<LoginPage/>} />
+				<Route path="/login" element={<LoginPage />} />
+                <Route path="/add" element={<AddRecord />} />
 			</Routes>
 		</AuthProvider>
 		</main>

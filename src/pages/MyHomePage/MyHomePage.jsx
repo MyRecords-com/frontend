@@ -33,7 +33,7 @@ export default function MyHomePage() {
     return (
       <>
       <div style={{'padding-bottom': 36}}></div>
-      <div className="container">
+      <div className="container-fluid">
       <div>
       <Carousel />
       </div>
@@ -41,11 +41,13 @@ export default function MyHomePage() {
       <div>
         <h1>NEW RELEASES:</h1>
       </div>
-      <div>
+      <div className="container">
+        <div className="row">
      {  
      releases.map((rls, index) => {
        return <MainPageCard key={index} rls={rls} />
           })}
+      </div>
       </div>
       </div>
       </div>

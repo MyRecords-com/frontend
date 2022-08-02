@@ -4,6 +4,7 @@ import testimg3 from '../../img/vinyl-digging.jpeg'
 
 export default function Carousel(){
     return (
+      <div className="container fluid">
         <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,6 +42,7 @@ export default function Carousel(){
     <span className="carousel-control-next-icon" aria-hidden="true"></span>
     <span className="visually-hidden">Next</span>
   </button>
+</div>
 </div>
     )
 }

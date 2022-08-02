@@ -15,7 +15,7 @@ if (user === null) {
     return (
 <nav className="navbar navbar-dark bg-dark fixed-top">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">MyRecords</a>
+    <a className="navbar-brand" href="/">RecordHub</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -61,7 +61,7 @@ if (user === null) {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">MyRecords</a>
+        <a className="navbar-brand" href="/">RecordHub</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <span className="navbar-toggler-icon"></span>
         </button>
