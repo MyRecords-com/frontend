@@ -11,15 +11,15 @@ Tagline:
 Whose it made for? Enthusiasts/DJ's/Music Producers
 
 ## ERD
-(https://drive.google.com/file/d/1vrA0SXIo8tfxlDK135lWu_CftT-2NMHI/view?usp=sharing)
+![my erd](https://drive.google.com/file/d/1vrA0SXIo8tfxlDK135lWu_CftT-2NMHI/view?usp=sharing)
 
 ## Wireframes
-(https://whimsical.com/my-records-RMcTSfQHsdnKTy8Ri6fkXH)
+![wireframes](https://whimsical.com/my-records-RMcTSfQHsdnKTy8Ri6fkXH)
 
 ### Why I chose this project concept:
 - I have a strong passion for music, am a vinyl enthusiast, and have DJ’d in the past. A platform like is a fantastic way for vinyl enthusiasts, DJs, and music producers to discover new vinyl and connect with what the world is collectively listening to. I envisioned that over time as this platform transforms into a full blown marketplace, that it becomes the go-to online destination for the vinyl community.
 
-(https://i.imgur.com/XCFfGr8.jpg)
+![mytables](https://i.imgur.com/XCFfGr8.jpg)
 
 ### Why I chose Django for my final project:
 - I chose Django because I first wanted to challenge myself. I secondly chose Django because I know that it is a popular language that I may come across in my future work, and wanted to begin to better understand its relevent stack and it’s capabilities.
